@@ -1,7 +1,7 @@
 # Install Kerbernetes Components
 
 An Alpine based image to install Kerbernetes components from Kubernetes official binary release site. 
-The binaries are installed in /shared volume which you can mount on host's installation directory.
+The binaries (linux/amd64) are installed in /shared volume which you can mount on host's installation directory.
 
 The container accept two environment variables: VERSION and COMPONENTS.
 
