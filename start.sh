@@ -1,7 +1,7 @@
 #!/bin/sh
 apk update && apk add --no-cache wget openssl ca-certificates
-VERSION=${VERSION:-v1.6.4}
-COMPONENTS=${COMPONENTS:-"kube-apiserver kube-controller-manager kube-scheduler kubectl"}
+VERSION=${VERSION:-v1.9.2}
+COMPONENTS=${COMPONENTS:-"kube-apiserver kube-controller-manager kube-scheduler kubectl kubelet kube-proxy"}
 mkdir -p /shared /tmp/download
 cd /var/tmp
 for i in $COMPONENTS
